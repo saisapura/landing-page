@@ -1,45 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <div class="wrapper">
     <title>Sai Coffee Company</title>
-  </head>
-  <body>
-    <nav class="navbar">
-      <nav class="navbar-container">
-        <div class="navbar-brand">
-          <a href="index.html">
-            <img src="img/logo.png" alt="Sai Coffee" />
+</head>
+
+<body>
+  <nav class="mid-circle"></nav>
+  <nav class="navbar">
+    <nav class="navbar-container">
+      <div class="navbar-brand">
+        <a href="index.html">
+          <img src="img/logo.png" alt="Sai Coffee" />
+        </a>
+      </div>
+
+      <ul class="navbar-nav-left">
+        <li><a href="#">Trending</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Gift Cards</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+
+      <ul class="navbar-nav-right">
+        <li>
+          <a href="#">
+            <img src="img/markup.png" />
+            <span>Find a store</span>
           </a>
-        </div>
-
-        <ul class="navbar-nav-left">
-          <li><a href="#">Trending</a></li>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">Gift Cards</a></li>
-          <li><a href="#">About</a></li>
-        </ul>
-
-        <ul class="navbar-nav-right">
-          <li>
-            <a href="#">
-              <img src="img/markup.png" />
-              <span>Find a store</span>
-            </a>
-          </li>
-          <li><button class="btn btn-white-black-border">Sign in</button></li>
-          <li><button class="btn btn-black-black-border">Join now</button></li>
-        </ul>
-      </nav>
+        </li>
+        <li><button class="btn btn-white-black-border">Sign in</button></li>
+        <li><button class="btn btn-black-black-border">Join now</button></li>
+      </ul>
     </nav>
+  </nav>
+
+  <!--Trending Part-->
+
+  <div class="content">
+    <div class="textBox">
+      <h2>It's your new favourite drink<br>It's<span> Sai Coffee!</span></h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros,
+        pulvinar facilisis justo mollis, auctor consequat urna.Morbi a bibendum metus.
+        Donec scelerisque sollicitudin enim eu venenatis.</p>
+      <button class="btn btn-black-black-border-lm">Learn More</button>
+    </div>
+    <div class=" imgBox">
+      <img src="img/04-yogurt-blueberry.png" class="blueberry-yogurt">
+    </div>
+    <ul class="img-cmp">
+      <li>
+        <img src="img-cmp/04-yogurt-blueberry.png"
+          onclick="imgSlider('img/04-yogurt-blueberry.png');changeCircleColor('#e7da4f')">
+      </li>
+      <li>
+        <img src="img-cmp/03-shake-pandan.png"
+          onclick="imgSlider('img/03-shake-pandan.png');changeCircleColor('yellow')">
+      </li>
+      <li>
+        <img src="img-cmp/02-shake-strawberry.png"
+          onclick="imgSlider('img/02-shake-strawberry.png');changeCircleColor('pink')">
+      </li>
+    </ul>
+
+    <!-- Social media icons -->
+    <ul class="icon">
+      <a target="_blank" href="#"><i class="fa fa-3x fa-twitter"></i></a>
+      <a target="_blank" href="#"><i class="fa fa-3x fa-instagram"></i></a>
+      <a target="_blank" href="#"><i class="fa fa-3x fa-facebook"></i></a>
+    </ul>
+    </section>
+
 
     <script src="script.js"></script>
-  </body>
+</body>
+
 </html>
