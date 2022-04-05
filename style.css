@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand&family=Roboto+Mono:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand&family=Roboto+Mono:wght@200&family=Secular+One&display=swap");
+
+:root {
+  --color-primary: #23a39a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  font-family: "Quicksand", "DM Sans", "sans-serif";
+  line-height: 1.4;
+  color: #000;
+  background-color: var(--color-primary);
+}
+a {
+  color: #000;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  margin: 5px 0;
+  line-height: 1.7;
+}
+
+img {
+  max-width: 100%;
+}
+/* Navbar */
+.navbar {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}
+
+.navbar-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar ul {
+  display: flex;
+  align-items: center;
+}
+
+.navbar li {
+  margin: 0 15px;
+  font-weight: bold;
+}
+.navbar-brand img {
+  width: 55px;
+  height: 55px;
+}
+
+/*markup image*/
+.navbar-nav-right img {
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+}
+
+.navbar-nav-right li:first-child {
+  display: flex;
+  align-items: center;
+}
+
+.navbar a {
+  color: #000;
+  text-decoration: none;
+}
+
+.navbar-nav-left {
+  text-transform: uppercase;
+  flex: 1;
+  margin-left: 20px;
+  font-weight: bolder;
+}
+
+.navbar-nav-left li:hover {
+  color: #fff;
+}
+
+.navbar-nav-left li :hover:after {
+  margin-bottom: -3px;
+  background-color: #fff;
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 3px;
+  border-radius: 6px;
+}
+
+/*Buttons*/
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  background: none;
+  border: 1px #000 solid;
+  border-radius: 50px;
+  padding: 8px 16px;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn-white-black-border {
+  border-color: #000;
+  color: #000;
+}
+.btn-white-black-border:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: 0.2s;
+}
+
+.btn-black-black-border {
+  background-color: #000;
+  color: #fff;
+}
+.btn-black-black-border:hover {
+  opacity: 0.6;
+  transition: 0.2s;
+}
+/*Learn More button*/
+/* .btn-black-black-border {
+  background-color: #000;
+  color: #fff;
+} */
